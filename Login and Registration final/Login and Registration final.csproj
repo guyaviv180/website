@@ -73,6 +73,7 @@
     </Content>
     <Content Include="Error page.aspx" />
     <Content Include="home.aspx" />
+    <Content Include="home.png" />
     <Content Include="javascript.js" />
     <Content Include="Login.aspx" />
     <Content Include="Registration.aspx" />
