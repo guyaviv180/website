@@ -35,7 +35,7 @@ namespace Login_and_Registration_final
                 if (Request.Form["logout"] != null)
                 {
                     Session["user"] = null;
-                    Response.Redirect("/logout.aspx");
+                    Response.Redirect("/Logout.aspx");
                 }
 
 
