@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <h1>התחברות</h1>
-
+    <link href="StyleSheet1.css" rel="stylesheet" />
     <script src="javascript.js"></script>
 
      <form method="post" action ="Login.aspx">
@@ -30,7 +30,7 @@
             </tr>
         </table>
 
-        <input type="submit" name="submit" id="submitLogin" value="התחבר" onclick="return Logincheck()"/>
+        <input type="submit" name="submit" id="submitLogin" class="main" value="התחבר" onclick="return Logincheck()"/>
     </form>
 
 </asp:Content>

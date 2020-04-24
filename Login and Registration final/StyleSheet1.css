@@ -1,5 +1,11 @@
-﻿button.example{
+﻿button.main{
     border-color: white;
-    border-width: 2px;
+    border-width: 3px;
+    font-size: 17px;
+}
+
+input.main {
+    border-color: white;
+    border-width: 3px;
     font-size: 17px;
 }

@@ -76,6 +76,7 @@
     <Content Include="home.png" />
     <Content Include="javascript.js" />
     <Content Include="Login.aspx" />
+    <Content Include="logout.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="User info.aspx" />
@@ -102,6 +103,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.aspx.cs">

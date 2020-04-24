@@ -5,7 +5,7 @@
 
     <h1>הירשמות</h1>
 
-
+    <link href="StyleSheet1.css" rel="stylesheet" />
     <script src="javascript.js"></script>
 
     <form method="post" action ="Registration.aspx">
@@ -113,7 +113,7 @@
 
         </table>
 
-        <input type="submit" id="submit" name="submit" value="הירשם" onclick="return check()" />
+        <input type="submit" id="submit" name="submit" class="main" value="הירשם" onclick="return check()" />
 
     </form>
 </asp:Content>
