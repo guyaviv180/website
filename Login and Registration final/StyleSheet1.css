@@ -9,3 +9,8 @@ input.main {
     border-width: 3px;
     font-size: 17px;
 }
+
+table {
+    background-color: whitesmoke;
+    border-radius: 5%;
+}

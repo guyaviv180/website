@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<admins>
+  <admin>
+    <firstName>admin</firstName>
+    <lastName>user</lastName>
+    <username>myAdmin</username>
+    <password>myAdminPasswrd</password>
+    <birthdate>1989-12-19</birthdate>
+    <email>adminUser123@gmail.com</email>
+    <phone>0555555555</phone>
+    <gender>male</gender>
+    <address>admin 10 ramat gan</address>
+  </admin>
+</admins>

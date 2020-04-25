@@ -8,9 +8,9 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body style="direction:rtl;background-color:lightblue">
+<body style="direction:rtl;background-color:gainsboro">
 
-    <button onclick="window.location.href='/home.aspx'" style="position:absolute;top:20px; left:20px;background-color:lightblue; border:hidden;"><img src="home.png" /></button> <br />
+    <button onclick="window.location.href='/home.aspx'" style="position:absolute;top:20px; left:20px;background-color:gainsboro; border:hidden;"><img src="home.png" /></button> <br />
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 
             </asp:ContentPlaceHolder>

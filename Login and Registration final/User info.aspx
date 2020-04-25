@@ -8,7 +8,7 @@
     שם משתמש: <%= username %> <br /> 
     שם פרטי: <%= firstName %><br />
     שם משפחה: <%= lastName %><br />
-    ססמה: <%= password %>><br />
+    ססמה: <%= password %><br />
     תאריך לידה: <%= birthdate %><br />
     אימייל: <%= email %><br />
     טלפון: <%= phone %><br />

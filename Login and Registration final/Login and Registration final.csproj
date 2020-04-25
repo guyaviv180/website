@@ -82,6 +82,7 @@
     <Content Include="StyleSheet1.css" />
     <Content Include="User info.aspx" />
     <Content Include="Web.config" />
+    <Content Include="admins.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Edit user details.aspx.cs">
