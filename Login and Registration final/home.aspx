@@ -8,7 +8,8 @@
     <h1>בית</h1>
 
     <button onclick="window.location.href='/Connect four.aspx'" class="connectFour">ארבע בשורה</button>
-    <button onclick="window.location.href='/jumping-cube.aspx'" class="jumpingCube">קוביה מקפצת</button><br /> <br />
+    <button onclick="window.location.href='/jumping-cube.aspx'" class="jumpingCube">קוביה מקפצת</button>
+    <button onclick="window.location.href='/pong.aspx'" class="pong">פונג</button><br /> <br />
     <button onclick="window.location.href='/Registration.aspx'" class="main">הירשמות</button> <br /> <br />
     <button onclick="window.location.href='/Login.aspx'" class="main">התחברות</button> <br /> <br />
     <button onclick="window.location.href='/User info.aspx'" class="main">מידע משתמש</button><br /> <br />

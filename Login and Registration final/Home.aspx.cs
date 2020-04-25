@@ -38,7 +38,10 @@ namespace Login_and_Registration_final
                     Response.Redirect("/Logout.aspx");
                 }
 
-
+                if (Request.Form["play connect four"] != null)
+                {
+                    Response.Redirect("/Connect four.aspx");
+                }
             }
         }
     }

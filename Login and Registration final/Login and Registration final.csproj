@@ -77,6 +77,8 @@
     <Content Include="Edit user details.aspx" />
     <Content Include="Error page.aspx" />
     <Content Include="graphics.js" />
+    <Content Include="pong.aspx" />
+    <Content Include="pong.png" />
     <Content Include="skins\green_flannel.jpeg" />
     <Content Include="Home.aspx" />
     <Content Include="home.png" />
@@ -145,6 +147,13 @@
     </Compile>
     <Compile Include="Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pong.aspx.cs">
+      <DependentUpon>pong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pong.aspx.designer.cs">
+      <DependentUpon>pong.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.aspx.cs">
