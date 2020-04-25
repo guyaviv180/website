@@ -1,0 +1,37 @@
+﻿.empty {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: white;
+}
+
+.red {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid red;
+    background-color: red;
+}
+
+.blue {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid blue;
+    background-color: blue;
+}
+
+table {
+    background-image: url('wood.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+td {
+    width: 60px;
+    height: 60px;
+}

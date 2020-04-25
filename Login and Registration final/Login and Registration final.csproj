@@ -71,20 +71,39 @@
     <Content Include="App_Data\Database2_log.ldf">
       <DependentUpon>Database2.mdf</DependentUpon>
     </Content>
+    <Content Include="connect four StyleSheet.css" />
+    <Content Include="Connect four.aspx" />
+    <Content Include="Connect four.js" />
     <Content Include="Edit user details.aspx" />
     <Content Include="Error page.aspx" />
+    <Content Include="graphics.js" />
+    <Content Include="skins\green_flannel.jpeg" />
     <Content Include="Home.aspx" />
     <Content Include="home.png" />
     <Content Include="javascript.js" />
+    <Content Include="jumping-cube-picture.png" />
+    <Content Include="jumping-cube.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
+    <Content Include="red-blue.png" />
+    <Content Include="skins\red_flannel.jpeg" />
     <Content Include="Registration.aspx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="User info.aspx" />
     <Content Include="Web.config" />
     <Content Include="admins.xml" />
+    <Content Include="skins\whale.png" />
+    <Content Include="skins\white_flannel.jpeg" />
+    <Content Include="wood.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connect four.aspx.cs">
+      <DependentUpon>Connect four.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Connect four.aspx.designer.cs">
+      <DependentUpon>Connect four.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Edit user details.aspx.cs">
       <DependentUpon>Edit user details.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -105,6 +124,13 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jumping-cube.aspx.cs">
+      <DependentUpon>jumping-cube.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jumping-cube.aspx.designer.cs">
+      <DependentUpon>jumping-cube.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -153,6 +179,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

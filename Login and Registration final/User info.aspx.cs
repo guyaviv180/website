@@ -48,7 +48,7 @@ namespace Login_and_Registration_final
             phone = row["phone"].ToString();
             gender = row["gender"].ToString();
             address = row["address"].ToString();
-
+            
 
         }
     }
