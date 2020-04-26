@@ -16,6 +16,7 @@ namespace Login_and_Registration_final
         public string lastName;
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if (Session["user"] != null)
             {
                 string connectionstring = ConfigurationManager.ConnectionStrings["database"].ConnectionString;
@@ -30,6 +31,17 @@ namespace Login_and_Registration_final
                     DataRow row = ds.Tables[0].Rows[0];
                     firstName = row["firstName"].ToString();
                     lastName = row["lastName"].ToString();
+                }
+
+                else if (Session["isAdmin"].ToString() == "True")
+                {
+                    DataSet xmlDs = new DataSet();
+                    xmlDs.ReadXml(System.Web.HttpContext.Current.Server.MapPath("admins.xml"));
+                    foreach (DataRow Xrow in xmlDs.Tables[0].Rows)
+                    {
+                        firstName = Xrow[2].ToString();
+                        lastName = Xrow[3].ToString();
+                    }
                 }
 
                 if (Request.Form["logout"] != null)
