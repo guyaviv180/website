@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <link href="connect%20four%20StyleSheet.css" rel="stylesheet" />
     <script src="Connect four.js"></script>
-    <table>
+    <table style="margin:auto; align-content:center">
         <tr>
             <td><button type="button" onclick="return play('0')" class="empty" id="0"></button></td>
             <td><button type="button" onclick="return play('1')" class="empty" id="1"></button></td>

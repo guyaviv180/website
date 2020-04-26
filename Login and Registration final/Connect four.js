@@ -1,6 +1,7 @@
-﻿var cells = new Array(42) // מערך של כל התאים במשחק
-var p1Counter = 0; //מונה של מספר המהלכים של משתמש 1
-var p2Counter = 0; //מונה של מספר המהלכים של משתמש 2
+﻿var cells = new Array(42);
+var p1Counter = 0; 
+var p2Counter = 0; 
+var alertCounter = 0;
 
 function play(cell) {
     if (p2Counter < p1Counter) {
@@ -58,12 +59,18 @@ function checkHorizontalWin() {
         currentNum = horizontalArr[i];
         if (cells[currentNum] == 1 && cells[currentNum + 1] == 1 && cells[currentNum + 2] == 1 && cells[currentNum + 3] == 1) {
             colorHorizontally(currentNum);
-            alert("p1 won");
+            if (alertCounter == 0) {
+                alert("p1 won");
+            }
+            alertCounter++;
             disable();
         }
         if (cells[currentNum] == 2 && cells[currentNum + 1] == 2 && cells[currentNum + 2] == 2 && cells[currentNum + 3] == 2) {
             colorHorizontally(currentNum);
-            alert("p2 won");
+            if (alertCounter == 0) {
+                alert("p2 won");
+            }
+            alertCounter++;
             disable();
         }
     }
@@ -74,12 +81,17 @@ function checkVerticalWin() {
         currentNum = verticalArr[i];
         if (cells[currentNum] == 1 && cells[currentNum + 7] == 1 && cells[currentNum + 14] == 1 && cells[currentNum + 21] == 1) {
             colorvertically(currentNum);
-            alert("p1 won");
+            if (alertCounter == 0) {
+                alert("p1 won");
+            }
+            alertCounter++;
             disable();
         }
         if (cells[currentNum] == 2 && cells[currentNum + 7] == 2 && cells[currentNum + 14] == 2 && cells[currentNum + 21] == 2) {
             colorvertically(currentNum);
-            alert("p2 won");
+            if (alertCounter == 0) {
+                alert("p2 won");
+            }
             disable();
         }
     }
@@ -90,12 +102,17 @@ function checkGoingUpDiagonalWin() {
         currentNum = goingUpDiagonalArr[i];
         if (cells[currentNum] == 1 && cells[currentNum - 6] == 1 && cells[currentNum - 12] == 1 && cells[currentNum - 18] == 1) {
             colorGoingUpDiagonally(currentNum);
-            alert("p1 won");
+            if (alertCounter == 0) {
+                alert("p1 won");
+            }
+            alertCounter++;
             disable();
         }
         if (cells[currentNum] == 2 && cells[currentNum - 6] == 2 && cells[currentNum - 12] == 2 && cells[currentNum - 18] == 2) {
             colorGoingUpDiagonally(currentNum);
-            alert("p2 won");
+            if (alertCounter == 0) {
+                alert("p2 won");
+            }
             disable();
         }
     }
@@ -106,12 +123,17 @@ function checkGoingDownDiagonalWin() {
         currentNum = goingDownDiagonalArr[i];
         if (cells[currentNum] == 1 && cells[currentNum + 8] == 1 && cells[currentNum + 16] == 1 && cells[currentNum + 24] == 1) {
             colorGoingDownDiagonally(currentNum);
-            alert("p1 won");
+            if (alertCounter == 0) {
+                alert("p1 won");
+            }
+            alertCounter++;
             disable();
         }
         if (cells[currentNum] == 2 && cells[currentNum + 8] == 2 && cells[currentNum + 16] == 2 && cells[currentNum + 24] == 2) {
             colorGoingDownDiagonally(currentNum);
-            alert("p2 won");
+            if (alertCounter == 0) {
+                alert("p2 won");
+            }
             disable();
         }
     }

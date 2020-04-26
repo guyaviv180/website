@@ -10,14 +10,14 @@
         <img id="white_flannel" width="50" height="50" src="skins/white_flannel.jpeg" />
     </div>
     <script src="graphics.js"></script>
-    <button id="1" type="button" onclick="game(wood)"><img src="wood.jpg" height="50" width="50" /></button> 
-    <button id="2" type="button" onclick="game(whale)"><img src="skins/whale.png" height="50" width="50" /></button>
-    <button id="3" type="button" onclick="game(green_flannel)"><img src="skins/green_flannel.jpeg" height="50" width="50" /></button>
-    <button id="4" type="button" onclick="game(red_flannel)"><img src="skins/red_flannel.jpeg" height="50" width="50" /></button>
-    <button id="5" type="button" onclick="game(white_flannel)"><img src="skins/white_flannel.jpeg" height="50" width="50" /></button>
+    <button style="left:29%; top:3.5%; position:absolute" id="1" type="button" onclick="game(wood)"><img src="wood.jpg" height="50" width="50" /></button> 
+    <button style="left:34%; top:3.5%; position:absolute" id="2" type="button" onclick="game(whale)"><img src="skins/whale.png" height="50" width="50" /></button>
+    <button style="left:39%; top:3.5%; position:absolute" id="3" type="button" onclick="game(green_flannel)"><img src="skins/green_flannel.jpeg" height="50" width="50" /></button>
+    <button style="left:44%; top:3.5%; position:absolute" id="4" type="button" onclick="game(red_flannel)"><img src="skins/red_flannel.jpeg" height="50" width="50" /></button>
+    <button style="left:49%; top:3.5%; position:absolute" id="5" type="button" onclick="game(white_flannel)"><img src="skins/white_flannel.jpeg" height="50" width="50" /></button>
 
     <br />
-    <canvas id="myCanvas" width="600" height="300" style="background-color:lightblue; direction:ltr"></canvas>
+    <canvas id="myCanvas" width="600" height="300" style="background-color:lightblue; direction:ltr; left:29%; top:13.5%; position:absolute"></canvas>
 
     <script>
         canvas = document.getElementById("myCanvas");

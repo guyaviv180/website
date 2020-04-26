@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <canvas id="screen" width="800" height="600" style="background-color:black"></canvas>
+    <canvas style="margin:auto; display:block" id="screen" width="800" height="600" style="background-color:black"></canvas>
     <script>
         var canvas;
         var context;
