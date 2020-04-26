@@ -1,9 +1,9 @@
-﻿var cells = new Array(42);
-var p1Counter = 0; 
+﻿var cells = new Array(42); //מערך של כל התאים במשחק
+var p1Counter = 0;
 var p2Counter = 0; 
 var alertCounter = 0;
 
-function play(cell) {
+function play(cell) { // פונקציה שמחליטה מי ישחק
     if (p2Counter < p1Counter) {
         p2Play(cell);
     }
@@ -16,11 +16,11 @@ function play(cell) {
 
 function p1Play(cell) {
     var cell = (cell);
-    if (cells[cell] != null) {
+    if (cells[cell] != null) {// בודק אם יש ערך בתא
         alert("cell is already taken");
         return (null);
     }
-    if (cell < 35 && cells[(parseInt(cell) + 7).toString()] == null) {
+    if (cell < 35 && cells[(parseInt(cell) + 7).toString()] == null) {// בודק בתא שלא נמצא בשורה התחתונה אם יש תא מלא מתחתיו
         alert("you can only place a disk under another disk");
         return (null);
     }
@@ -46,7 +46,7 @@ function p2Play(cell) {
 
 }
 
-function checkAllWin() {
+function checkAllWin() {// פונקציה שבודקת את כל הניצחונות
     checkHorizontalWin();
     checkVerticalWin();
     checkGoingUpDiagonalWin();
@@ -54,12 +54,12 @@ function checkAllWin() {
 }
 
 function checkHorizontalWin() {
-    var horizontalArr = [0, 1, 2, 3, 7, 8, 9, 10, 14, 15, 16, 17, 21, 22, 23, 24, 28, 29, 30, 31, 35, 36, 37, 38];
+    var horizontalArr = [0, 1, 2, 3, 7, 8, 9, 10, 14, 15, 16, 17, 21, 22, 23, 24, 28, 29, 30, 31, 35, 36, 37, 38];// מערך שמכיל את כל התאים שבהם יכול להתחיל ניצחון אופקי
     for (var i = 0; i < horizontalArr.length; i++) {
         currentNum = horizontalArr[i];
         if (cells[currentNum] == 1 && cells[currentNum + 1] == 1 && cells[currentNum + 2] == 1 && cells[currentNum + 3] == 1) {
             colorHorizontally(currentNum);
-            if (alertCounter == 0) {
+            if (alertCounter == 0) {// דואג שהתראת ניצחון לא תופיע יותר מפעם אחת
                 alert("p1 won");
             }
             alertCounter++;
@@ -76,7 +76,7 @@ function checkHorizontalWin() {
     }
 }
 function checkVerticalWin() {
-    var verticalArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+    var verticalArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];// מערך שמכיל את כל התאים שבהם יכול להתחיל ניצחון אנכי
     for (var i = 0; i < verticalArr.length; i++) {
         currentNum = verticalArr[i];
         if (cells[currentNum] == 1 && cells[currentNum + 7] == 1 && cells[currentNum + 14] == 1 && cells[currentNum + 21] == 1) {
@@ -97,7 +97,7 @@ function checkVerticalWin() {
     }
 }
 function checkGoingUpDiagonalWin() {
-    var goingUpDiagonalArr = [21, 22, 23, 24, 28, 29, 30, 31, 35, 36, 37, 38];
+    var goingUpDiagonalArr = [21, 22, 23, 24, 28, 29, 30, 31, 35, 36, 37, 38];// מערך שמכיל את כל התאים שבהם יכול להתחיל ניצחון אלכסוני כלפי מעלה
     for (var i = 0; i < goingUpDiagonalArr.length; i++) {
         currentNum = goingUpDiagonalArr[i];
         if (cells[currentNum] == 1 && cells[currentNum - 6] == 1 && cells[currentNum - 12] == 1 && cells[currentNum - 18] == 1) {
@@ -118,7 +118,7 @@ function checkGoingUpDiagonalWin() {
     }
 }
 function checkGoingDownDiagonalWin() {
-    var goingDownDiagonalArr = [0, 1, 2, 3, 7, 8, 9, 10, 14, 15, 16, 17];
+    var goingDownDiagonalArr = [0, 1, 2, 3, 7, 8, 9, 10, 14, 15, 16, 17];// מערך שמכיל את כל התאים שבהם יכול להתחיל ניצחון אלכסוני כלפי מטה
     for (var i = 0; i < goingDownDiagonalArr.length; i++) {
         currentNum = goingDownDiagonalArr[i];
         if (cells[currentNum] == 1 && cells[currentNum + 8] == 1 && cells[currentNum + 16] == 1 && cells[currentNum + 24] == 1) {
@@ -139,7 +139,7 @@ function checkGoingDownDiagonalWin() {
     }
 }
 
-function colorHorizontally(num) {
+function colorHorizontally(num) {// צובע את הניצחון מהתא המתחיל לפי סוג הניצחון
     for (var i = num; i < num + 4; i++) {
         document.getElementById(i).style.border = "1px solid yellow"
     }
@@ -160,7 +160,7 @@ function colorGoingDownDiagonally(num) {
     }
 }
 
-function disable() {
+function disable() {// אם ייגמר המשחק כל הכפתורים יבוטלו
     for (var i = 0; i < 41; i++) {
         document.getElementById(i).disabled = true;
     }

@@ -54,7 +54,6 @@ namespace Login_and_Registration_final
             {
                 string firstName = Request.Form["firstName"];
                 string lastName = Request.Form["lastName"];
-                string username = Request.Form["username"];
                 string password = Request.Form["password"];
                 string birthdate = Request.Form["birthdate"];
                 string email = Request.Form["email"];
@@ -62,12 +61,16 @@ namespace Login_and_Registration_final
                 string gender = Request.Form["gender"];
                 string address = Request.Form["address"];
 
-                string sqlInsertData = string.Format("INSERT INTO [Users]" + "(username, password, firstName, lastName, birthdate, email, phone, gender, address)" + "VALUES (N'{0}', N'{1}', N'{2}', N'{3}', N'{4}', N'{5}', N'{6}', N'{7}', N'{8}')", username, password, firstName, lastName, birthdate, email, phone, gender, address);
+                string sqlInsertData = string.Format("UPDATE [Users] SET username = N'{0}',  password = N'{1}', firstName = N'{2}', lastName = N'{3}', birthdate = N'{4}', email = N'{5}', phone = N'{6}', gender = N'{7}', address = N'{8}' where (username = N'{0}')", username, password, firstName, lastName, birthdate, email, phone, gender, address);
                 SqlConnection connectionObj = new SqlConnection(connectionstring);
-                SqlCommand queryObj = new SqlCommand(sqlInsertData, connectionObj);
+                SqlCommand updateQuery = new SqlCommand(sqlInsertData, connectionObj);
                 connectionObj.Open();
-                int rowsAffected = queryObj.ExecuteNonQuery();
+                int updatedRows = updateQuery.ExecuteNonQuery();
                 connectionObj.Close();
+                if (updatedRows == 1)
+                {
+                    Response.Redirect("/User info.aspx");
+                }
 
             }
             

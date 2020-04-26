@@ -19,12 +19,22 @@ namespace Login_and_Registration_final
                 string username = Request.Form["username"];
                 string password = Request.Form["password"];
 
-                if (isInputCorrect(username, password))
+                if (isAdmin(username, password))
                 {
+                    Session["usernameData"] = username;
+                    Session["passwordData"] = password;
+                    Session["isAdmin"] = true;
+                    Response.Redirect("/User info.aspx");
+                }
+
+                else if (isInputCorrect(username, password))
+                {
+                    Session["isAdmin"] = false;
                     Session["usernameData"] = username;
                     Session["passwordData"] = password;
                     Response.Redirect("/User info.aspx");
                 }
+
                 else
                 {
                     Session["CsErr"] = "שגיאה 401 המשתמש לא נמצא או שסיסמא לא נכונה";
@@ -50,6 +60,22 @@ namespace Login_and_Registration_final
             connection.Close();
             return correct;
 
+        }
+
+        public bool isAdmin(string username, string password)
+        {
+            bool isAdmin = false;
+            DataSet xmlDs = new DataSet();
+            xmlDs.ReadXml(System.Web.HttpContext.Current.Server.MapPath("admins.xml"));
+            foreach (DataRow row in xmlDs.Tables[0].Rows)
+            {
+                if (username.Equals(row[0]) && password.Equals(row[1]))
+                {
+                    isAdmin = true;
+                    Session["user"] = username;
+                }
+            }
+            return isAdmin;
         }
 
     }

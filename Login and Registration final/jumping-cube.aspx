@@ -41,7 +41,7 @@
             context = canvas.getContext("2d");
             var fps = 30;
             countScore();
-            createObstacle();
+            createObstacle(); //יוצר מכשול
             setInterval(function () {
                 moveCube();
                 moveObstacle();
@@ -88,7 +88,7 @@
                 setInterval(function () { score += 1 }, 100)
             }
 
-            function decideWhichObstacle() {
+            function decideWhichObstacle() {// מגריל גודל ורוחב למכשול גבוה או מכשול נמוך
                 var x = getRandomNumber(0, 1);
                 if (x == 0) {
                     obstacleWidth = getRandomNumber(20, 35);
@@ -100,7 +100,7 @@
                 }
             }
 
-            function createObstacle() {
+            function createObstacle() {// מכריז על מכשול עם הגודל מהפונקציה שמגרילה 
                 decideWhichObstacle()
                 obstacleWidth;
                 obstacleHeight;
@@ -108,7 +108,7 @@
                 obstacleY = canvas.height - obstacleHeight;
             }
 
-            function moveObstacle() {
+            function moveObstacle() { // מזיז את המכשול קדימה וברגע שהוא יוצא מהמסך מגריל גודל מחדש ומביא אותו קדימה
                 if (obstacleX + obstacleWidth < 0) {
                     createObstacle();
                     obstacleSpeed += 0.3
@@ -119,7 +119,7 @@
                 }
             }
 
-            function stopGame() {
+            function stopGame() {// מדפיס את הניקוד הסופי ומאפס את המשתנים
                 alert("you lost, your score was: " + score);
                 cubeY = canvas.height - cubeHeight;
                 obstacleX = canvas.width - obstacleWidth;
@@ -131,7 +131,7 @@
 
             }
 
-            function disable() {
+            function disable() {// מבטל את האפשרות לבחור דמות
                 document.getElementById("1").disabled = true;
                 document.getElementById("2").disabled = true;
                 document.getElementById("3").disabled = true;
