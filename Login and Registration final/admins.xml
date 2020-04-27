@@ -3,8 +3,8 @@
   <admin>
     <username>myAdmin1</username>
     <password>Password1</password>
-    <firstName>admin</firstName>
-    <lastName>user</lastName>
+    <firstName>משתמש</firstName>
+    <lastName>רגיל</lastName>
     <birthdate>1989-12-19</birthdate>
     <email>adminUser123@gmail.com</email>
     <phone>0555555555</phone>

@@ -13,5 +13,6 @@
     אימייל: <%= email %><br />
     טלפון: <%= phone %><br />
     מין: <%= gender %><br />
-    כתובת: <%= address %><br />
+    כתובת: <%= address %><br /> <br />
+    כדי לצאת מהמסך לחץ על כפתור הבית
 </asp:Content>

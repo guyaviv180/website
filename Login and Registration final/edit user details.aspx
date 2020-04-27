@@ -1,11 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Edit user details.aspx.cs" Inherits="Login_and_Registration_final.edit_user_details" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="StyleSheet1.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <link href="StyleSheet1.css" rel="stylesheet" />
-
-
-    <form action="/Edit user details.aspx" method="post">
+    
+    <form  method="post" action="Edit user details.aspx">
 
 
         <table>
@@ -18,7 +17,6 @@
                     <input type="text" id="firstName" name="firstName" value="<%= firstName %>"/>
                 </td>
                 <td style="color:red" id="firstNameErr"></td>
-
             </tr>
 
             <tr>
@@ -105,11 +103,7 @@
 
     </form>
 
-
-
-
     <script>
-
         function checkFirstName() {
 
             var firstName = document.getElementById("firstName").value;
@@ -165,20 +159,15 @@
             var year = bDate.getFullYear();
             if (!bd) {
                 document.getElementById("bdErr").innerHTML = "יש לבחור תאריך";
-                document.getElementById("ageErr").innerHTML = "שגיאה";
                 return false;
             }
             if (year < 1960) {
                 document.getElementById("bdErr").innerHTML = "יש לבחור שנה החל מ 1960";
-                document.getElementById("ageErr").innerHTML = "שגיאה";
                 return false;
             }
             else {
                 document.getElementById("bdErr").innerHTML = "";
-                document.getElementById("ageErr").innerHTML = "";
                 var current = new Date();
-                var age = current.getFullYear() - year;
-                document.getElementById("age").value = age;
                 return true;
             }
         }
@@ -232,6 +221,7 @@
         }
 
         function check() {
+            alert("big yoshi");
             var a = checkFirstName();
             var b = checkLastName();
             var c = checkPassword();
