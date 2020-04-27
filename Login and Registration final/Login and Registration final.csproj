@@ -74,6 +74,7 @@
     <Content Include="connect four StyleSheet.css" />
     <Content Include="Connect four.aspx" />
     <Content Include="Connect four.js" />
+    <Content Include="Delete user.aspx" />
     <Content Include="Edit user details.aspx" />
     <Content Include="Error page.aspx" />
     <Content Include="graphics.js" />
@@ -105,6 +106,13 @@
     </Compile>
     <Compile Include="Connect four.aspx.designer.cs">
       <DependentUpon>Connect four.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Delete user.aspx.cs">
+      <DependentUpon>Delete user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delete user.aspx.designer.cs">
+      <DependentUpon>Delete user.aspx</DependentUpon>
     </Compile>
     <Compile Include="Edit user details.aspx.cs">
       <DependentUpon>Edit user details.aspx</DependentUpon>

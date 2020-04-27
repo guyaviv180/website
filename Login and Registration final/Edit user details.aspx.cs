@@ -15,15 +15,15 @@ namespace Login_and_Registration_final
 {
     public partial class edit_user_details : System.Web.UI.Page
     {
-        public string firstName;
-        public string lastName;
-        public string username;
-        public string password;
-        public string birthdate;
-        public string email;
-        public string phone;
-        public string gender;
-        public string address;
+        protected string firstName;
+        protected string lastName;
+        protected string username;
+        protected string password;
+        protected string birthdate;
+        protected string email;
+        protected string phone;
+        protected string gender;
+        protected string address;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["user"] == null)
@@ -113,12 +113,14 @@ namespace Login_and_Registration_final
                     userNode.SetElementValue("password", password);
                     userNode.SetElementValue("firstName", firstName);
                     userNode.SetElementValue("lastName", lastName);
-                    userNode.SetElementValue("birthdate", birthdate);
                     userNode.SetElementValue("email", email);
                     userNode.SetElementValue("phone", phone);
-                    userNode.SetElementValue("homeAddress", address);
-                    userNode.SetElementValue("Gender", gender);
-                    
+                    userNode.SetElementValue("address", address);
+                    userNode.SetElementValue("gender", gender);
+                    userNode.SetElementValue("birthdate", birthdate);
+                    xmlFile.Save(MapPath("admins.xml"));
+                    Response.Redirect("/User info.aspx");
+
                 }
                 
 
