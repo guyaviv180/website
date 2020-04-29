@@ -7,16 +7,18 @@ using System.Web.UI.WebControls;
 
 namespace Login_and_Registration_final
 {
-    public partial class logout : System.Web.UI.Page
+    public partial class Admin_help : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["user"] == null)
             {
-                Session["CsErr"] = "שגיאה לא ניתן לנתק אורח";
-                Response.Redirect("/Error page.aspx");
+                Response.Redirect("Guest help.aspx");
             }
-            Session.Abandon();
+            else if (Session["isAdmin"].ToString() == "False")
+            {
+                Response.Redirect("User help.aspx");
+            }
         }
     }
 }

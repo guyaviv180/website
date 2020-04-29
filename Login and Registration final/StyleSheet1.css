@@ -43,5 +43,6 @@ input.main {
 
 table {
     background-color: whitesmoke;
-    border-radius: 5%;
+    border:5px solid whitesmoke;
+    border-radius: 20px;
 }

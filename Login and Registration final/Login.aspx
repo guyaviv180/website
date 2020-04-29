@@ -30,6 +30,8 @@
             </tr>
         </table>
 
+         <br />
+
         <input type="submit" name="submit" id="submitLogin" class="main" value="התחבר" onclick="return Logincheck()"/>
     </form>
 

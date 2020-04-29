@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin help.aspx" />
     <Content Include="App_Data\Database2.mdf" />
     <Content Include="App_Data\Database2_log.ldf">
       <DependentUpon>Database2.mdf</DependentUpon>
@@ -78,8 +79,11 @@
     <Content Include="Edit user details.aspx" />
     <Content Include="Error page.aspx" />
     <Content Include="graphics.js" />
+    <Content Include="Guest help.aspx" />
+    <Content Include="info.png" />
     <Content Include="pong.aspx" />
     <Content Include="pong.png" />
+    <Content Include="Show all users.aspx" />
     <Content Include="skins\green_flannel.jpeg" />
     <Content Include="Home.aspx" />
     <Content Include="home.png" />
@@ -92,6 +96,7 @@
     <Content Include="skins\red_flannel.jpeg" />
     <Content Include="Registration.aspx" />
     <Content Include="StyleSheet1.css" />
+    <Content Include="User help.aspx" />
     <Content Include="User info.aspx" />
     <Content Include="Web.config" />
     <Content Include="admins.xml" />
@@ -100,6 +105,13 @@
     <Content Include="wood.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin help.aspx.cs">
+      <DependentUpon>Admin help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin help.aspx.designer.cs">
+      <DependentUpon>Admin help.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Connect four.aspx.cs">
       <DependentUpon>Connect four.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -127,6 +139,13 @@
     </Compile>
     <Compile Include="Error page.aspx.designer.cs">
       <DependentUpon>Error page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guest help.aspx.cs">
+      <DependentUpon>Guest help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest help.aspx.designer.cs">
+      <DependentUpon>Guest help.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
@@ -171,12 +190,26 @@
     <Compile Include="Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Show all users.aspx.cs">
+      <DependentUpon>Show all users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Show all users.aspx.designer.cs">
+      <DependentUpon>Show all users.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User help.aspx.cs">
+      <DependentUpon>User help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User help.aspx.designer.cs">
+      <DependentUpon>User help.aspx</DependentUpon>
     </Compile>
     <Compile Include="User info.aspx.cs">
       <DependentUpon>User info.aspx</DependentUpon>

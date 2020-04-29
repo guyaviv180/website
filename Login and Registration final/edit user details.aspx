@@ -4,6 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
+    <h1>שנה פרטי משתמש</h1>
+
     <form  method="post" action="Edit user details.aspx">
 
 
@@ -99,9 +101,11 @@
 
         </table>
 
-        <input type="submit" id="submit" name="submit" class="main" onclick="return check()" value="שנה פרטים" />
+        <br />
 
+        <input type="submit" id="submit" name="submit" class="main" onclick="return check()" value="שנה פרטים" /> 
     </form>
+    <button style="margin-right:5px" onclick="window.location.href='/Delete user.aspx'" class="main">מחק משתמש</button>
 
     <script>
         function checkFirstName() {

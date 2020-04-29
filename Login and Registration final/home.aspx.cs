@@ -43,17 +43,6 @@ namespace Login_and_Registration_final
                         lastName = Xrow[3].ToString();
                     }
                 }
-
-                if (Request.Form["logout"] != null)
-                {
-                    Session["user"] = null;
-                    Response.Redirect("/Logout.aspx");
-                }
-
-                if (Request.Form["play connect four"] != null)
-                {
-                    Response.Redirect("/Connect four.aspx");
-                }
             }
         }
     }

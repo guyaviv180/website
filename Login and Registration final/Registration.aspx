@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <h1>הירשמות</h1>
+    <h1>הרשמה</h1>
 
     <link href="StyleSheet1.css" rel="stylesheet" />
     <script src="javascript.js"></script>
@@ -112,6 +112,8 @@
             </tr>
 
         </table>
+
+        <br />
 
         <input type="submit" id="submit" name="submit" class="main" value="הירשם" onclick="return check()" />
 

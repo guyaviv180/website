@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
-    <h1>מידע משתמש</h1>
+    <h1>פרטי משתמש</h1>
 
     שם משתמש: <%= username %> <br /> 
     שם פרטי: <%= firstName %><br />
