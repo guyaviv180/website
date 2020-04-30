@@ -2,5 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    אדמין
+    <p style="white-space:pre-wrap">
+        שלום מנהל, ביכולתך לצפות ברשימת המשתמשים על ידי לחיצה על הכפתור "פעולות מנהל"
+        בעמוד ניתן גם לסנן את המשתמשים לפי קריטריונים בהם אתה יכול לשלוט
+        כאשר אתה מוכן אתה יכול לסמן את המשתמשים בריבוע "מחיקה" לבחור את אלו שאתה רוצה למחוק וללחוץ על כפתור "מחק משתמשים"
+    </p>
 </asp:Content>

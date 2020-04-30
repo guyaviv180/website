@@ -6,9 +6,9 @@
     <firstName>משתמש</firstName>
     <lastName>מנהל</lastName>
     <birthdate>1989-12-19</birthdate>
-    <email>adminUser123@gmail.com</email>
+    <email>adminuser@gmail.com</email>
     <phone>0555555555</phone>
-    <gender>male</gender>
+    <gender>female</gender>
     <address>admin 10 ramat gan</address>
   </admin>
 </admins>

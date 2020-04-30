@@ -2,35 +2,39 @@
     border-color: white;
     border-width: 3px;
     font-size: 17px;
+    font-family:Calibri
 }
 
 button.connectFour {
     color:white;
-    width:50px;
-    height:50px;
+    font-family:Calibri;
+    width:100px;
+    height:100px;
     border: 1px solid white;
     border-radius:50%;
-    font-size: 15px;
+    font-size: 30px;
     background-image: url('red-blue.png');
     background-position:center;
 }
 
 button.jumpingCube {
-    width:94.4px;
-    height:41.4px;
+    width: 190px;
+    height: 80px;
     color: black;
+    font-family: Calibri;
     border: 1px solid white;
-    font-size: 15px;
+    font-size: 30px;
     background-image: url('jumping-cube-picture.png');
-    background-size:100%;
+    background-size: 100%;
 }
 
 button.pong {
-    width: 60px;
-    height: 45px;
+    width: 120px;
+    height: 90px;
     color: white;
+    font-family: Calibri;
     border: 1px solid white;
-    font-size: 15px;
+    font-size: 30px;
     background-image: url('pong.png');
     background-size: 100%;
 }
@@ -39,10 +43,53 @@ input.main {
     border-color: white;
     border-width: 3px;
     font-size: 17px;
+    font-family: Calibri;
 }
 
 table {
     background-color: whitesmoke;
-    border:5px solid whitesmoke;
+    border: 5px solid whitesmoke;
     border-radius: 20px;
+    font-family: Calibri;
+}
+
+.bar {
+    background-color: darkgray;
+    border: none;
+    color: white;
+    padding: 10px 14px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: Calibri;
+}
+
+    .bar:hover {
+        background-color: gray;
+        color: white;
+        font-family: Calibri;
+    }
+
+.Logout {
+    background-color: darkgray;
+    border: none;
+    color: white;
+    padding: 10px 14px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: Calibri;
+}
+
+    .Logout:hover {
+        background-color: red;
+        color: white;
+        font-family: Calibri;
+    }
+
+h1 {
+    font-family: Calibri;
+}
+p {
+    font-family: Calibri;
 }

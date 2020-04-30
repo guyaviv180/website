@@ -225,7 +225,6 @@
         }
 
         function check() {
-            alert("big yoshi");
             var a = checkFirstName();
             var b = checkLastName();
             var c = checkPassword();

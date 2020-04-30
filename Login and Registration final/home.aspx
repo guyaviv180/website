@@ -10,12 +10,4 @@
     <button onclick="window.location.href='/Connect four.aspx'" class="connectFour">ארבע בשורה</button>
     <button onclick="window.location.href='/jumping-cube.aspx'" class="jumpingCube">קוביה מקפצת</button>
     <button onclick="window.location.href='/pong.aspx'" class="pong">פונג</button><br /> <br />
-    <button onclick="window.location.href='/Registration.aspx'" class="main">הרשמה</button> <br /> <br />
-    <button onclick="window.location.href='/Login.aspx'" class="main">התחברות</button> <br /> <br />
-    <button onclick="window.location.href='/User info.aspx'" class="main">פרטי משתמש</button><br /> <br />
-    <button onclick="window.location.href='/Edit user details.aspx'" class="main">שנה פרטי משתמש</button><br /> <br />
-    <button onclick="window.location.href='/Show all users.aspx'" class="main">פעולות מנהל</button><br /> <br />
-    <button onclick="window.location.href='/Logout.aspx'" class="main">התנתק</button><br /> <br />
-    
-    
 </asp:Content>

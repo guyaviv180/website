@@ -66,7 +66,6 @@ namespace Login_and_Registration_final
                     address = Xrow[8].ToString();
                 }
             }
-
             else if (ds.Tables[0].Rows.Count != 1)
             {
                 Response.Redirect("Login.aspx");

@@ -8,6 +8,11 @@ namespace Login_and_Registration_final
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["isAdmin"] != null)
+            {
+                Session["CsErr"] = "שגיאה לא ניתן למחוק חשבון מנהל";
+                Response.Redirect("/Error page.aspx");
+            }
             if (Session["user"] == null)
             {
                 Response.Redirect("Login.aspx");

@@ -7,11 +7,24 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <link href="StyleSheet1.css" rel="stylesheet" />
 </head>
 <body style="direction:rtl;background-color:gainsboro">
 
     <button onclick="window.location.href='/home.aspx'" style="position:absolute;top:20px; left:20px;background-color:gainsboro; border:none;"><img src="home.png" border="0" /></button> <br />
     <button onclick="window.location.href='/Admin help.aspx'" style="position:absolute;top:15px; left:70px;background-color:gainsboro; border:none;"><img src="info.png" border="0" height="45" width="45"/></button>
+    <table style="border-spacing:0px">
+        <tr>
+            <td><button onclick="window.location.href='/Registration.aspx'" class="bar">הרשמה</button></td>
+            <td><button onclick="window.location.href='/Login.aspx'" class="bar">התחברות</button></td>
+            <td><button onclick="window.location.href='/User info.aspx'" class="bar">פרטי משתמש</button></td>
+            <td><button onclick="window.location.href='/Edit user details.aspx'" class="bar">שנה פרטי משתמש</button></td>
+            <td><button onclick="window.location.href='/Show all users.aspx'" class="bar">פעולות מנהל</button></td>
+            <td><button onclick="window.location.href='/Logout.aspx'" class="Logout">התנתק</button></td>
+        </tr>
+
+    </table>
+
     <br />
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 

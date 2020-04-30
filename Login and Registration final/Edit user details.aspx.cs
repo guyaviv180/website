@@ -122,15 +122,7 @@ namespace Login_and_Registration_final
                     Response.Redirect("/User info.aspx");
 
                 }
-                
-
             }
-            
-                
-
-                
-            
         }
-
     }
 }

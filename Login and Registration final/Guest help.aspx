@@ -2,5 +2,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    אורח
+    <p style="white-space:pre-wrap">
+        שלום אורח יקר
+        הגעת לאתר שלי 
+        כדי לגשת למשחקים עליך להירשם כמשתמש. חזור למסך הבית ולחץ על כפתור ההרשמה
+    </p>
+
 </asp:Content>
